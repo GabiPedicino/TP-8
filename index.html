@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+
+        <style>/*este es para poner las caracteristicas en html*/
+
+        *{
+            margin:0;
+            padding: 0;
+
+        }
+
+        header{
+            font-family: Arial, Helvetica, sans-serif;
+            width: 480px;
+            margin: 0 auto;
+        }
+
+        ul{
+            list-style: none;
+            
+        }
+        /*le hace cambios a la etiqueta a. con display la convierte en bloque porque por defecto esta en linea*/
+        /*el signo de corchete angular hace que se despliegue en bloque el menu*/
+        #menu li>a{
+            background-color: grey;
+            color: white;
+            padding: 10px;
+            display: block;/*se pone en bloque*/
+            text-decoration: none;/*le saca el subrayado*/
+            min-width: 100px;
+            
+        }
+        #menu>li>a:hover{
+            color: 000;
+            background-color: #eaeaea;
+        }
+        #menu>li{
+            float:left;/*lo hace flotante hacia la izquierda*/
+            text-align: center;
+        }
+
+        #menu>li>ul{
+            display: none;
+
+        }
+
+        #menu>li:hover>ul{
+            display: block;
+
+        }
+
+        </style>
+    </head>
+    <body>
+        <header>
+    
+        <nav>
+            <ul id="menu">
+                <li><a href="">Inicio</a></li>
+                <li><a href="">Cursos</a>
+
+                    <ul>
+                        <li><a href="">Frontend</a></li>
+                        <li><a href="">Backend</a></li>
+                        <li><a href="">Mobile</a></li>
+                    </ul>
+                
+                </li>
+                <li><a href="">Tutoriales</a></li>
+                <li><a href="">Contacto</a></li>
+            </ul>
+        
+
+        </nav>
+    </header>
+    </body>
+</html>
